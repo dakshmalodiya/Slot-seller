@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>FF Slot Seller – Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <span class="brand">FF Slot Seller</span>
+  <span class="sub" id="eventName">Admin</span>
+</header>
+
+<main>
+  <section class="view on" id="v-dashboard">
+    <div class="stats" id="stats"></div>
+    <div class="sec"><h2>Groups</h2><span class="sub">filled / capacity</span></div>
+    <div id="groupSummary"></div>
+  </section>
+
+  <section class="view" id="v-groups">
+    <div class="sec"><h2>WhatsApp groups</h2></div>
+    <div class="empty"><p>Group management arrives in Phase 3.</p></div>
+  </section>
+
+  <section class="view" id="v-teams">
+    <div class="sec"><h2>Teams</h2></div>
+    <div class="empty"><p>Team list and search arrive in Phase 7.</p></div>
+  </section>
+
+  <section class="view" id="v-messages">
+    <div class="sec"><h2>Messages</h2></div>
+    <div class="empty"><p>Ready-to-send WhatsApp messages arrive in Phase 7.</p></div>
+  </section>
+</main>
+
+<nav class="tabbar" id="tabbar">
+  <button class="on" data-v="dashboard"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>Dashboard</button>
+  <button data-v="groups"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Groups</button>
+  <button data-v="teams"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-4 3-6 6.5-6s5.900 2 6.500 6"/><circle cx="17" cy="9" r="2.5"/></svg>Teams</button>
+  <button data-v="messages"><svg viewBox="0 0 24 24"><path d="M3 6l9 7 9-7M3 6v12h18V6z"/></svg>Messages</button>
+</nav>
+
+<script src="admin.js"></script>
+</body>
+</html>
